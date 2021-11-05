@@ -49,16 +49,16 @@ int main(){
     int val;
     for(int i=0;i<n;i++){
         cin>>val;
-        node.add(i,val);
+        node->add(i,val);
     }
 
     int type,a,b;
     while(q--){
         cin>>type>>a>>b;
         if(type==1)
-            node.add(a,b);
+            node->add(a,b);
         else
-            cout<<node.get_sum(a,b-1)<<endl;
+            cout<<node->get_sum(a,b-1)<<endl;
 
 
     }
