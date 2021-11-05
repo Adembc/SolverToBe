@@ -11,7 +11,7 @@ struct Vertex {
     }
 
     void extend() {
-        if (!left_child && left + 1 < right) {
+        if (!left_child && left  < right) {
             int t = (left + right) / 2;
             left_child = new Vertex(left, t);
             right_child = new Vertex(t+1, right);
